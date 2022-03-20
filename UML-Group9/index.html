@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>UML-Group9</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="images/avatar.png">
+  <link rel="stylesheet" href="styles/main.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+  <meta name="description" content="软件需求工程与UML建模第九小组">
+
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="">
+            <img src="images/avatar.png" class="site-logo">
+            <h1 class="site-title">UML-Group9</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+
+        <div>
+          <a href="index.html" class="site-nav">
+            日志
+          </a>
+          <a href="https://github.com/RE-UML-9th/digital-villages-governance-platform" class="site-nav">
+            GitHub
+          </a>
+          <a href="post/about/index.html" class="site-nav">
+            关于
+          </a>
+        </div>
+      </div>
+
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          软件需求工程与UML建模第九小组
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+        <article class="post-item">
+          <div class="left">
+            <a href="./post/hello-uml-group9/index.html">
+              <h2 class="post-title">Hello UML-Group9</h2>
+            </a>
+            <div class="post-date">
+              2022-03-20
+            </div>
+            <div class="post-abstract">
+              <p>👏 热烈庆祝 <strong>UML-Group9</strong>网站的诞生 ！<br>
+                ✍️  这个网站是软件工程需求与UML建模小组第9小组搭建的，用来上传本组的技术博客，以及一些工作日志...</p>
+
+            </div>
+          </div>
+
+          <a class="right" href="./post/hello-uml-group9/index.html">
+            <div class="feature-container" style="background-image: url('post-images/hello-uml-group9.jpg')">
+            </div>
+          </a>
+
+          <div class="pagination-container">
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+
+    AOS.init();
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+
+  </script>
+
+</body>
+
+</html>

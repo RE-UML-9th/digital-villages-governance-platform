@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>关于</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="shortcut icon" href="../../images/avatar.png">
+  <link rel="stylesheet" href="../../styles/main.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <meta name="description" content="
+欢迎来到第九组的博客网站！🤝
+
+🏠 关于本组
+👨‍💻 组长是谁
+📝 项目概要
+📬 联系我们
+..." />
+  <meta name="keywords" content="" />
+</head>
+
+<body>
+  <div id="app" class="main">
+
+    <div class="sidebar" :class="{ 'full-height': menuVisible }">
+      <div class="top-container" data-aos="fade-right">
+        <div class="top-header-container">
+          <a class="site-title-container" href="../../index.html">
+            <img src="../../images/avatar.png" class="site-logo">
+            <h1 class="site-title">UML-Group9</h1>
+          </a>
+          <div class="menu-btn" @click="menuVisible = !menuVisible">
+            <div class="line"></div>
+          </div>
+        </div>
+        <div>
+          <a href="../../index.html" class="site-nav">
+            日志
+          </a>
+          <a href="https://github.com/RE-UML-9th/digital-villages-governance-platform" class="site-nav">
+            GitHub
+          </a>
+          <a href="../../post/about/index.html" class="site-nav">
+            关于
+          </a>
+        </div>
+      </div>
+
+      <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+        <div class="site-description">
+          软件需求工程与UML建模第九小组
+        </div>
+      </div>
+    </div>
+
+
+    <div class="main-container">
+      <div class="content-container" data-aos="fade-up">
+        <div class="post-detail">
+          <h2 class="post-title">关于</h2>
+          <div class="post-date">2022-03-20</div>
+
+          <div class="post-content" v-pre>
+            <blockquote>
+              <p>欢迎来到第九组的博客网站！🤝</p>
+            </blockquote>
+            <h2 id="关于本组">🏠 关于本组</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;我们是北京理工大学2020级计算机学院软件工程专业软件需求工程与UML建模第9小组，所选项目为<strong>数字乡村治理平台</strong>🌳。结组过程几经曲折，最终确定为由<strong>李亚赟，唐嘉铭，曹秋实，张桢，徐凯炫，王佳俊</strong>组成的六人小组😋。</p>
+            <h2 id="组长是谁">👨‍💻 组长是谁</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;组长是<strong>李亚赟</strong>(yūn)，是全组最废物的人</p>
+            
+            <h2 id="项目概要">📝 项目概要</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;数字乡村建设是指按照“产业兴旺、生态宜居、乡风文明、治理有效、生活富裕”的总要求，基于乡村信息基础设施建设，以信息化、数字化、网络化为重要载体，实现乡村产业数字化、治理数据化、服务信息化以及生活智慧化，重构乡村现代经济发展形态，打造乡村治理信息化新模式。本组针对数字乡村的治理，积极响应国家乡村振兴战略，将数字乡村治理平台作为本组选题。
+            </p>
+            <h2 id="联系我们">📬 联系我们</h2>
+            <p>以下是小组各成员的邮箱：<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>李亚赟</strong>：lyy2002@vip.qq.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>唐嘉铭</strong>：774066115@qq.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>曹秋实</strong>：13901234350@139.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>张桢</strong>：1961487125@qq.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>徐凯炫</strong>：2441244064@qq.com<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<strong>王佳俊</strong>：2581606394@qq.com<br>
+            如果您对我们的内容有任何意见或建议，请通过上述方式联系我们&nbsp;:&nbsp;)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script type="application/javascript">
+
+    AOS.init();
+
+    var app = new Vue({
+      el: '#app',
+      data: {
+        menuVisible: false,
+      },
+    })
+
+  </script>
+
+
+
+
+
+
+</body>
+
+</html>
