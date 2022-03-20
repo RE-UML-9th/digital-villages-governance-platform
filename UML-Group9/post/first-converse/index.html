@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>记第一次面谈</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../images/avatar.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="这次是第九小组（乙方）与第十小组（甲方）的第一次面谈！
+    面谈于3月19日下午在学服二楼展开，这次面谈我们明确了甲方对该服务平台的基本定位,即数字乡村治理..." />
+    <meta name="keywords" content="Gridea" />
+</head>
+
+<body>
+    <div id="app" class="main">
+
+        <div class="sidebar" :class="{ 'full-height': menuVisible }">
+            <div class="top-container" data-aos="fade-right">
+                <div class="top-header-container">
+                    <a class="site-title-container" href="../../index.html">
+                        <img src="../../images/avatar.png" class="site-logo">
+                        <h1 class="site-title">UML-Group9</h1>
+                    </a>
+                    <div class="menu-btn" @click="menuVisible = !menuVisible">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="../../index.html" class="site-nav">
+                        日志
+                    </a>
+                    <a href="https://github.com/RE-UML-9th/digital-villages-governance-platform" class="site-nav">
+                        GitHub
+                    </a>
+                    <a href="../../post/about/index.html" class="site-nav">
+                        关于
+                    </a>
+                </div>
+            </div>
+            <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+                <div class="social-container">
+
+                </div>
+                <div class="site-description">
+                    软件需求工程与UML建模第九小组
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container">
+            <div class="content-container" data-aos="fade-up">
+                <div class="post-detail">
+                    <h2 class="post-title">记第一次面谈</h2>
+                    <div class="post-date">2022-03-20</div>
+
+                    <div class="feature-container" style="background-image: url('../../post-images/first-converse.jpg')">
+                    </div>
+
+                    <div class="post-content" v-pre>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>这次是第九小组（乙方）与第十小组（甲方）的第一次面谈⭐！</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面谈于3月19日下午在学服二楼展开，这次面谈我们明确了甲方对该服务平台的基本定位,即<strong>数字乡村治理服务一体化平台</strong>，为政府部门提供大数据信息和必要的管理信息，为村民提供信息公开、简化办事流程。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们确定了项目前景：依托国家乡村振兴计划中的乡村数字化趋势，进行项目的设计开发，确定了项目范围：农村全体人口还有外出打工的农村人员。在对后者的讨论过程中我们产生过分歧，在受众范围上是只针对农村常住人口开放还是农村户籍人口开放，是面向政府还是面向普通村民。最后我们达成一致：受众范围包含所有户籍人口，常住与流动都在考虑范围之内；平台同时面向政府与公众，为政府提供大数据信息搜集整理，协助政务工作，为村民提供信息公开，查询与办理，与政府交互的功能。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;值得一提的是，我们的功能分区并未因面向的对象不同而有不同的设计，不同的用户具有功能模块访问权限不同，以此来简便的解决对象问题。
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;其次，我们明确了项目涉众和硬数据采集。通过在国家统计局、政府官方文件、数字乡村现有实践研究等途径，查找、收集、整理了相关的数据信息，用以支撑需求和设计。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接着，确定了甲方的具体业务功能需求，制作出了第一版功能设定规划。<br> <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;甲方的功能需求为以下六点：<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1️⃣<strong>推进乡村治理方式数字化</strong>，利用网络信息数据收集和存储，大数据分析，高效收集管理村民信息、社会生活数据指标、社会自然环境数据，提供政务辅助，提高政务效率和准确性；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2️⃣<strong>助推乡村治理主体多元化</strong>，使得村民个体能更方便地参与到乡村公共治理中，提升村民参与治理的积极性；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3️⃣<strong>促进乡村治理信息公开化</strong>，让信息传递和整合过程更高效透明，实现部分政务信息线上透明监督；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4️⃣<strong>推动乡村治理服务便利化</strong>，提高乡村民生服务数字化水平，打通服务的“最后一公里”，为村民最大程度上地提供高效温馨的便民服务；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5️⃣<strong>助力乡村教育资源优质化</strong>，整合相关科教资源，提高农业专家在线咨询、农业技术培训以及农村人才在线学习等服务，提高农民教育水平；<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6️⃣<strong>推动美丽乡村，绿色乡村建设</strong>，响应、助力国家绿水青山和碳达峰远景规划。依托国家制定的整体工作方法因地制宜，因人而异的开展低碳、环保的生产生活。<br> <br> 
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最后，我们一起制作了汇报PPT，撰写文档，确定了平台的基本原型框架、功能分区、细化功能，共同完成了第一周的工作任务✅。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="application/javascript">
+        AOS.init();
+        var app = new Vue({
+            el: '#app',
+            data: {
+                menuVisible: false,
+            },
+        })
+    </script>
+</body>
+</html>
