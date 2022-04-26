@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>结课的准备</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../../images/avatar.png">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="Gridea" />
+</head>
+
+<body>
+    <div id="app" class="main">
+
+        <div class="sidebar" :class="{ 'full-height': menuVisible }">
+            <div class="top-container" data-aos="fade-right">
+                <div class="top-header-container">
+                    <a class="site-title-container" href="../../index.html">
+                        <img src="../../images/avatar.png" class="site-logo">
+                        <h1 class="site-title">UML-Group9</h1>
+                    </a>
+                    <div class="menu-btn" @click="menuVisible = !menuVisible">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="../../index.html" class="site-nav">
+                        日志
+                    </a>
+                    <a href="https://github.com/RE-UML-9th/digital-villages-governance-platform" class="site-nav">
+                        GitHub
+                    </a>
+                    <a href="../../post/about/index.html" class="site-nav">
+                        关于
+                    </a>
+                    <a href="../../archives/index.html" class="site-nav">
+                        归档
+                      </a>
+                </div>
+            </div>
+            <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+                <div class="social-container">
+
+                </div>
+                <div class="site-description">
+                    软件需求工程与UML建模第九小组
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container">
+            <div class="content-container" data-aos="fade-up">
+                <div class="post-detail">
+                    <h2 class="post-title">结课的准备</h2>
+                    <div class="post-date">2022-04-25</div>
+
+                    <div class="feature-container" style="background-image: url('../../post-images/425.png')">
+                    </div>
+
+                    <div class="post-content" v-pre>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>在项目进行中，我组进行了三次讨论，绘制了结构化分析的数据流图，撰写需求文档，完善网站，并制作讲演的PPT。</strong><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一次小组讨论中，我们结合项目的平台架构原型，考虑到系统的受众人群较为单一，而系统功能复杂，因此选择进行结构化分析。之后我组结合架构原型图，从疫情防控、村民管理、乡村环保、便民服务四个功能板块出发，绘制了数据流图，并完成对系统的结构化分析。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二次小组讨论中，我们对系统的展示做了完善，我们设计了网站的展示范例，其中包括平台架构原型中的四个功能板块，以及一个反馈的界面。网站前端以小组之前的一个网站开发项目为基础，添加了新的板块，用来做本次系统设计的前端界面<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三次小组讨论中，我组完成了技术博客的撰写，并完善了需求文档。在给定需求文档的格式下，结合本次项目的参考文献、技术等进行修改，技术博客则仍然发表在本小组托管至GitHub的网站上。之后为了展示需要，我们将本组的成果写到PPT中，为下一次的展示做好准备。
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="application/javascript">
+        AOS.init();
+        var app = new Vue({
+            el: '#app',
+            data: {
+                menuVisible: false,
+            },
+        })
+    </script>
+</body>
+</html>
